@@ -4,6 +4,11 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class E9NonRepeatingChar {
+
+    // Find the First Non-Repeating Character in a String: Given a string, find and
+    // return the first non-repeating character. For example, in the string
+    // "abracadabra", the first non-repeating character is 'c'.
+
     public static void main(String[] args) {
         String s = "abracadabra";
 

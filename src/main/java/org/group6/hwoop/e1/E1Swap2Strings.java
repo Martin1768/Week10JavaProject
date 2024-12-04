@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class E1Swap2Strings
 {
 	public static void main(String[] args) {
+
+		// Write a program to swap 2 String without a temporary variable
+
 		Scanner scanner = new Scanner(System.in);
 		String s1, s2;
 		do {

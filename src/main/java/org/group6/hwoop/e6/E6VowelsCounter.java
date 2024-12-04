@@ -5,17 +5,20 @@ import java.util.Scanner;
 public class E6VowelsCounter
 {
 	public static void main(String[] args) {
+
+		// Create a method to count how many vowels are present in a string
+		// “documentation”
+
 		Scanner scanner = new Scanner(System.in);
 		String s1;
 		do {
-			System.out.print("Enter word (at least one alphabetic character): ");
+			System.out.print("Enter a word (at least one alphabetic character): ");
 			s1 = scanner.next();
 		} while (s1.isBlank());
+		scanner.nextLine();	// discard the rest of the line
 
-		System.out.println("Entered word: " + s1);
+		int vowels = s1.toLowerCase().replaceAll("[^aeiouy]", "").length();
 
-		int vowels = s1.replaceAll("[^aeiouy]", "").length();
-
-		System.out.println("The word contains " + vowels + " vowel" + ((vowels == 1)? ".":"s."));
+		System.out.println("The word '" + s1 + "' contains " + vowels + " vowel" + ((vowels == 1)? ".":"s."));
 	}
 }

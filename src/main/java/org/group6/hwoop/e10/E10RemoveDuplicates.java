@@ -6,6 +6,9 @@ import java.util.LinkedHashSet;
 import java.util.List;
 
 public class E10RemoveDuplicates {
+
+    // How can you remove all duplicates from ArrayList?
+
     public static void main(String[] args) {
         List<Integer> integerList = new ArrayList<>();
         integerList.addAll(Arrays.asList(2,13,10,2,5,5,10,11,12,11,13,1,1));

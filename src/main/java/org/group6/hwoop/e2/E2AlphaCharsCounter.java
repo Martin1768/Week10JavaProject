@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class E2AlphaCharsCounter {
     public static void main(String[] args) {
+
+        // Find out how many alpha characters are present in a string
+
         Scanner scanner = new Scanner(System.in);
 		String s1;
         System.out.print("Enter string (at least one character): ");
@@ -14,6 +17,6 @@ public class E2AlphaCharsCounter {
         }
         int result = s1.replaceAll("[^a-zA-Z]", "").length();
 
-        System.out.println("String contains " + result + " aplha characters.");
+        System.out.println("The string contains " + result + " alpha character" + ((result == 1)? ".":"s."));
     }
 }
