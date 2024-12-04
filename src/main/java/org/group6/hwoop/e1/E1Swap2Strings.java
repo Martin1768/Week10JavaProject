@@ -14,11 +14,13 @@ public class E1Swap2Strings
 			System.out.print("Enter 1st word (at least one alphabetic character): ");
 			s1 = scanner.next();
 		} while (s1.isBlank());
+		scanner.nextLine();	// discard the rest of the line
 
 		do {
 			System.out.print("Enter 2nd word (at least one alphabetic character): ");
 			s2 = scanner.next();
 		} while (s2.isBlank());
+		scanner.nextLine();	// discard the rest of the line
 
 		System.out.println("Entered words: " + s1 + ", " + s2);
 
